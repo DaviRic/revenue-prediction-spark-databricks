@@ -1,10 +1,13 @@
 from pyspark.sql import SparkSession # type: ignore
+import findspark # type: ignore
+findspark.init()
+import pandas as pd # type: ignore
 
 spark = SparkSession.builder.appName("Rossmann Store Sales").getOrCreate()
 
 # Caminho dos arquivos
-train_path = "data/raw/rossmann_store_sales/train.csv"
-store_parh = "data/raw/rossmann_store_sales/store.csv"
+train_path = "/home/davicruvel/revenue-prediction-spark-databricks/data/raw/rossmann_store_sales/train.csv"
+store_parh = "/home/davicruvel/revenue-prediction-spark-databricks/data/raw/rossmann_store_sales/store.csv"
 
 # Lê o arquivo de vendas (treinamento)
 train_df = spark.read.csv(train_path, header=True, inferSchema=True)
@@ -27,7 +30,7 @@ print("Store sample")
 store_df.show(5)
 
 # Faz o join entre dois DataFrames pela coluna "store" para uma visão combinada
-joined_df = train_df(store_df, on="Store", how="left")
+joined_df = train_df.join(store_df, on="Store", how="left")
 
 print("Joined sample")
 joined_df.show(5)
