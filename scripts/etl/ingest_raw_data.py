@@ -6,8 +6,8 @@ import pandas as pd # type: ignore
 spark = SparkSession.builder.appName("Rossmann Store Sales").getOrCreate()
 
 # Caminho dos arquivos
-train_path = "/home/davicruvel/revenue-prediction-spark-databricks/data/raw/rossmann_store_sales/train.csv"
-store_parh = "/home/davicruvel/revenue-prediction-spark-databricks/data/raw/rossmann_store_sales/store.csv"
+train_path = "../data/raw/rossmann_store_sales/train.csv"
+store_parh = "../data/raw/rossmann_store_sales/store.csv"
 
 # Lê o arquivo de vendas (treinamento)
 train_df = spark.read.csv(train_path, header=True, inferSchema=True)
