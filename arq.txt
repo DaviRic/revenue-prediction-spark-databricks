@@ -1,0 +1,55 @@
+🚀 [Projeto em andamento] Construindo um pipeline de previsão de receita com Spark e Databricks
+
+Nos últimos dias, venho desenvolvendo um projeto prático com foco em engenharia de dados e machine learning, utilizando:
+
+Apache Spark (com PySpark) para processamento de dados
+
+Python para estruturação dos dados e aplicação de modelos
+
+Até o momento, foquei bastante na etapa de Feature Engineering, onde estou transformando variáveis brutas em atributos que realmente façam sentido para o modelo.
+
+Essas novas features são fundamentais para que o modelo consiga entender padrões sazonais e contextuais no comportamento das vendas.
+
+🧠 Aprendizados até aqui:
+
+Como usar funções avançadas do PySpark, como when, datediff, to_date e manipulação de colunas temporais
+
+Importância da engenharia de atributos para melhorar o desempenho do modelo
+
+Organização modular do código para facilitar manutenção e escalabilidade
+
+Como preparar os dados sem causar data leakage em modelos preditivos
+
+Em breve, sigo para a parte de modelagem com Spark MLlib, onde vou aplicar regressão para prever a receita semanal das lojas 📈
+
+🔧 O projeto ainda está em andamento, mas já estou aprendendo bastante sobre boas práticas em pipelines de dados e machine learning distribuído.
+
+
+
+
+
+🛠️ Escopo do Projeto
+1. Ingestão de Dados
+- Importar arquivos CSV ou JSON para o Databricks File System (DBFS)
+- Ler os dados com spark.read.csv() e spark.read.json()
+- Armazenar dados brutos em uma camada bronze
+
+2. Limpeza e Transformação
+- Tratar valores nulos, remover duplicatas, converter tipos
+- Criar colunas novas (ex: total_price = quantity * unit_price)
+- Salvar os dados tratados em uma camada silver usando Delta Lake
+
+3. Análises e Visualizações
+- Consultas SQL no próprio Databricks notebook
+- Ex: vendas por categoria, top produtos, receita mensal
+- Gráficos simples integrados ao notebook
+
+4. Machine Learning (MLlib)
+- Selecionar features (ex: tipo de produto, valor unitário, cliente, etc)
+- Treinar um modelo de regressão para prever receita
+- Avaliar a performance do modelo com métricas como RMSE
+
+5. Exportação e Documentação
+- Exportar resultados em Parquet ou Delta
+- Notebook bem comentado com imagens, visualizações e explicações
+- Subir no GitHub com README explicando tudo
