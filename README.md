@@ -4,8 +4,8 @@ O objetivo é demonstrar na prática como pipeline de dados podem ser estruturad
 e transformação dos dados até a modelagem, avaliação e análise dos resultados.
 
 ## Pipeline do Projeto
-```
-graph TD
+```mermaid
+graph TD;
 A[Ingestão dos Dados] --> B[Limpeza dos Dados]
 B --> C[Feature Engineering]
 C --> D[Divisão dos Dados (Treino/Teste)]
