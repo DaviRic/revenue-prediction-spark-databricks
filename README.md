@@ -8,7 +8,7 @@ e transformação dos dados até a modelagem, avaliação e análise dos resulta
 graph TD;
 A[Ingestão dos Dados] --> B[Limpeza dos Dados]
 B --> C[Feature Engineering]
-C --> D[Divisão dos Dados (Treino/Teste)]
+C --> D[Divisão dos Dados]
 D --> E[Treinamento do Modelo]
 E --> F[Avaliação e Análise dos Resultados]
 ```
