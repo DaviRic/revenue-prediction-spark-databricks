@@ -3,7 +3,7 @@ Esse projeto desenvolve um pipeline completo de Machine Learning utilizando Apac
 O objetivo é demonstrar na prática como pipeline de dados podem ser estruturados para resolver problemas de negócios, desde a ingestão
 e transformação dos dados até a modelagem, avaliação e análise dos resultados.
 
-## Pipeline do Projeto
+## ⚙️ Pipeline do Projeto
 ```mermaid
 graph TD;
 A[Ingestão dos Dados] --> B[Limpeza dos Dados]
@@ -24,13 +24,19 @@ E --> F[Avaliação e Análise dos Resultados]
 ## 📂 Estrutura do Repositório
 ```
 📦 revenue-prediction-spark-databricks
-├── 📁 data/                  # Dados brutos e processados
-├── 📁 notebooks/             # Notebooks com cada etapa do pipeline
+├── 📁 data/                          # Dados brutos e processados
+├── 📁 models                         # Pasta onde se encontra o modelo treinado
+    └── 📁 linear_regression_model
+├── 📁 notebooks/                     # Notebooks com cada etapa do pipeline
     ├── 01_exploracao.ipynb
     └── 02_processing.ipynb
-├── 📁 docs/                  # Diagrama do pipeline e recursos visuais
+├── 📁 scripts                        # Pasta contendo alguns scripts
+    └── 📁 etl                        # Tratamento inicial de dados
+        └── ingest_raw_data.py
+├── 📁 docs/                         # Diagrama do pipeline e recursos visuais
 ├── README.md              # Documentação do projeto
 └── requirements.txt       # Dependências do projeto
+
 ```
 
 ## 🏗️ Etapas do Pipeline
@@ -70,18 +76,18 @@ E --> F[Avaliação e Análise dos Resultados]
     - Dispersão entre `Sales` e `Prediction`
     - Histogramas dos Erros.
 
-## Principais Resultados
+## 🎯 Principais Resultados
 - MAPE: 5,67% (bom nível de precisão)
 - Mais de 87% das previsões apresentam erro percentual inferior a 10%
 - Modelo adequado para cenários preditivos iniciais com possibilidade de melhorias
 
-## Possíveis melhorias
+## ✨ Possíveis melhorias
 - Implementação de modelos mais robustos:
   - Random Forest
   - Gradient Boosted Trees
 - Integração com banco de dados ou data lakes
 
-## Aprendizado
+## 🧠 Aprendizado
 - Hands-on com pipelines de Machine Learning no Apache Spark.
 - Entendimento do ciclo completo de projeto de dados:
   - Data Engineering -> Data Science -> Análise de Resultados.
