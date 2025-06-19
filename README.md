@@ -1,4 +1,4 @@
-# 🚀 Data Pipeline de Vendas + Previsão de Receita com Databricks
+# 🚀 Data Pipeline de Vendas + Previsão de Receita com Apache Spark
 Esse projeto desenvolve um pipeline completo de Machine Learning utilizando Apache Spark para prever a receita de vendas de loja.
 O objetivo é demonstrar na prática como pipeline de dados podem ser estruturados para resolver problemas de negócios, desde a ingestão
 e transformação dos dados até a modelagem, avaliação e análise dos resultados.
