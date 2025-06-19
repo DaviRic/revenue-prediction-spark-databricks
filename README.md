@@ -16,7 +16,7 @@ e transformação dos dados até a modelagem, avaliação e análise dos resulta
 
 ## 📂 Estrutura do Repositório
 ```
-📦 revenue-prediction-spark-databricks
+📁 revenue-prediction-spark-databricks
 ├── 📁 data/                          # Dados brutos e processados
 ├── 📁 docs/                          # Recursos visuais (diagrama do pipeline)
 ├── 📁 models                         # Pasta onde se encontra o modelo treinado
@@ -25,7 +25,7 @@ e transformação dos dados até a modelagem, avaliação e análise dos resulta
     ├── 01_exploracao.ipynb
     └── 02_processing.ipynb
 ├── 📁 scripts                        # Pasta contendo alguns scripts
-    └── 📁 etl                        # Tratamento inicial de dados
+    └── 📁 etl                        # Tratamento inicial dos dados
         └── ingest_raw_data.py
 ├── 📁 docs/                         # Diagrama do pipeline e recursos visuais
 ├── README.md              # Documentação do projeto
