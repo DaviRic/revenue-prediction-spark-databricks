@@ -18,6 +18,7 @@ e transformação dos dados até a modelagem, avaliação e análise dos resulta
 ```
 📦 revenue-prediction-spark-databricks
 ├── 📁 data/                          # Dados brutos e processados
+├── 📁 docs/                          # Recursos visuais (diagrama do pipeline)
 ├── 📁 models                         # Pasta onde se encontra o modelo treinado
     └── 📁 linear_regression_model
 ├── 📁 notebooks/                     # Notebooks com cada etapa do pipeline
@@ -86,3 +87,7 @@ e transformação dos dados até a modelagem, avaliação e análise dos resulta
   - Data Engineering -> Data Science -> Análise de Resultados.
 - Aplicação de técnicas de Feature Engineering no Spark
 
+## 📜 Licença
+Este projeto está sob licença MIT.
+
+---
